@@ -1,184 +1,168 @@
 <!DOCTYPE html>
-<html lang="en" className="!scroll-smooth">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DB Portafolio</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DB Portafolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+<!-- scrollable -->
+<main class="snap-container text-gray-200 relative z-10 bg-gradient-to-r from-zinc-950 via-gray-800 to-zinc-950">
+    <!-- Presentation -->
+    <section class="relative max-w-xl mx-auto snap-section z-20" id="section-1">
+        <header class="text-center">
+            <img src="./assets/GNU.png" alt="khaby" class="object-cover opacity-85 m-auto h-[50vh] p-4" />
 
-<body class="
-  min-h-dvh
-  text-gray-200
-  border-white
-">
-  <div class="absolute inset-0 bg-white dark:bg-gray-950">
-  <div class="absolute inset-0">
-    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-      <pattern id="pixel-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-          <rect x="0" y="0" width="1" height="1" class="fill-blue-500/20 dark:fill-blue-400/10" />
-          <rect x="8" y="4" width="1" height="1" class="fill-blue-500/30 dark:fill-blue-400/15" />
-          <rect x="16" y="8" width="1" height="1" class="fill-blue-500/20 dark:fill-blue-400/10" />
-          <rect x="4" y="12" width="1" height="1" class="fill-blue-500/30 dark:fill-blue-400/15" />
-          <rect x="12" y="16" width="1" height="1" class="fill-blue-500/20 dark:fill-blue-400/10" />
-        
-          <rect x="4" y="0" width="1" height="1" class="fill-purple-500/20 dark:fill-purple-400/10" />
-          <rect x="12" y="4" width="1" height="1" class="fill-purple-500/30 dark:fill-purple-400/15" />
-          <rect x="0" y="8" width="1" height="1" class="fill-purple-500/20 dark:fill-purple-400/10" />
-          <rect x="8" y="12" width="1" height="1" class="fill-purple-500/30 dark:fill-purple-400/15" />
-          <rect x="16" y="16" width="1" height="1" class="fill-purple-500/20 dark:fill-purple-400/10" />
-      </pattern>
-        <rect width="100%" height="100%" fill="url(#pixel-pattern)" />
-    </svg>
-  </div>
-    <div class="absolute inset-0 bg-gradient-to-b from-white via-white/0 to-white dark:from-gray-950 dark:via-gray-950/0 dark:to-gray-950" />
-  </div>
+            <h1 class="text-4xl"><b>DB Portafolio</b></h1>
+            <h2 class="text-2xl h-8 relative">
+                <b id="type-text"></b>
+                <span id="cursor" class="absolute top-0 left-0 text-white">|</span>
+            </h2>
+            <p class="text-xl">Links & Contacts</p>
 
-  <div class="relative max-w-xl mx-auto z-10">
-    <header class="justify-center text-center">
-    <img src="./assets/GNU.png" alt="khaby" 
-    class=" 
-    object-cover 
-    opacity-85
-    justify-center m-auto
-    h-[50vh]
-    p-4
-    ">
+            <section class="flex gap-2 justify-center mt-3">
+                <!-- Roblox -->
+                <a href="https://www.roblox.com/users/1351897093/profile" class="flex p-2 items-center justify-center rounded-full hover:scale-105 transition-transform bg-[#335FFF] m-1">
+                    <img src="./assets/RBLX.D.svg" alt="Roblox" width="28" height="28">
+                </a>
 
-    <h1 class="text-4xl"><b>DB Portafolio</b></h1>
-    <h1 class="text-2xl h-8 relative">
-      <b id="type-text"></b>
-      <span id="cursor" class="absolute top-0 left-0 text-white">|</span>
-    </h1>
-    <p class="text-xl">Links & Contacts</p>
+                <!-- Discord -->
+                <a href="https://discord.com/users/1066063645768958135" class="flex p-2 items-center justify-center rounded-full hover:scale-105 transition-transform bg-[#5865F2] m-1">
+                    <img src="./assets/Discord-Symbol-White.svg" alt="Discord" width="28" height="28">
+                </a>
 
-    <section class="flex gap-2 justify-center">
-      <!-- Roblox -->
-      <a 
-      href="https://www.roblox.com/users/1351897093/profile"
-      class="flex p-2 size-12 sm:size-14 items-center justify-center rounded-full hover:scale-105 transition-transform bg-[#335FFF] m-1">
+                <!-- X -->
+                <a href="https://x.com/Diegarro_15" class="flex p-2 items-center justify-center rounded-full hover:scale-105 transition-transform bg-black m-1">
+                    <svg width="28" height="28"><use xlink:href="./assets/sprite.svg#x" /></svg>
+                </a>
 
-      <img src="./assets/RBLX.D.svg" alt="Roblox" width="28" height="28">
-    </a>
+                <!-- Github (href corregido) -->
+                <a href="https://github.com/2B3" class="flex p-2 items-center justify-center rounded-full hover:scale-105 transition-transform bg-black m-1">
+                    <svg width="28" height="28"><use xlink:href="./assets/sprite.svg#github" /></svg>
+                </a>
 
-    <!-- Discord -->
-    <a 
-      href="https://discord.com/users/1066063645768958135"
-      class="flex p-2 size-12 sm:size-14 items-center justify-center rounded-full hover:scale-105 transition-transform bg-[#5865F2] m-1">
+                <!-- Youtube -->
+                <a href="https://www.youtube.com/channel/UC..." class="flex p-2 items-center justify-center rounded-full hover:scale-105 transition-transform bg-white m-1">
+                    <svg width="28" height="28"><use xlink:href="./assets/sprite.svg#youtube" /></svg>
+                </a>
+            </section>
+        </header>
 
-      <img src="./assets/Discord-Symbol-White.svg" alt="Discord" width="28" height="28">
-    </a>
+        <div class="text-center text-white p-3">
+            <p>I’m a Scripter and UI Designer specializing in Luau Programming. I work primarily on Linux and develop games while analyzing and optimizing scripts for performance and reliability. I focus on creating clean, efficient, and maintainable code.</p>
+        </div>
 
-    <!-- X -->
-     <a 
-      href="https://x.com/Diegarro_15"
-      class="flex p-2 size-12 sm:size-14 items-center justify-center rounded-full hover:scale-105 transition-transform bg-black m-1">
-
-      <svg width="28" height="28">
-        <use xlink:href="./assets/sprite.svg#x" />
-      </svg>
-    </a>
-
-    <!-- Github -->
-     <a 
-      href="https://github.com/2B3"© Copyright 2008-2025 thebestcreatorontheworkaremeobviuslyhigger.com
-      class="flex p-2 size-12 sm:size-14 items-center justify-center rounded-full hover:scale-105 transition-transform bg-black m-1">
-
-      <svg width="28" height="28">
-        <use xlink:href="./assets/sprite.svg#github" />
-      </svg>
-    </a>
-
-    <!-- Youtube -->
-     <a 
-      href="https://yt3.ggpht.com/4h_oiKlBaIjFBDkNbAEarO1_IU77IQJzdRI0r23_trY0P0wS1qoHtN1BciVpB1DsOg0fN1eRg1A=s88-c-k-c0x00ffffff-no-rj"
-      class="flex p-2 size-12 sm:size-14 items-center justify-center rounded-full hover:scale-105 transition-transform bg-white m-1">
-
-      <svg width="28" height="28">
-        <use xlink:href="./assets/sprite.svg#youtube" />
-      </svg>
-    </a>
-
+        <footer class="mt-6">
+            <div class="text-gray-400 text-xs flex justify-center items-center gap-4">
+                <a href="#">© Copyright 2008-2025 robloxbestdev.com</a>
+                <a href="#">About</a>
+                <a href="#">Privacy</a>
+            </div>
+        </footer>
     </section>
-  </header>
 
-  <main class="justify-center items-center text-white text-center">
-    <p class="block p-3">I’m a Scripter and UI Designer specializing in Luau Programming. I work primarily on Linux and develop games while analyzing and optimizing scripts for performance and reliability. I focus on creating clean, efficient, and maintainable code.</p>
-  </main>
+    <!-- Projects 
+    <section class="relative max-w-xl mx-auto snap-section z-20" id="section-2">
+        <h1 class="text-center p-2 text-4xl">
+          <b>Projects</b>
+        </h1>
 
-    <footer>
-      <div class="text-gray-400 text-xs flex justify-center items-center gap-4">
-        <a href="https://pbs.twimg.com/media/G3GH2KEagAA2X0i?format=jpg&name=900x900">© Copyright 2008-2025 robloxbestdev.com</a>
-        <a href="https://pbs.twimg.com/media/G3T6NdxXQAAqq9V?format=jpg&name=small">About</a>
-        <a href="https://pbs.twimg.com/media/G3kSfJoXQAAXmAr?format=jpg&name=small">Privacy</a>
-      </div>
-    </footer>
-  </div>
-</body>
+
+    </section>-->
+</main>
 
 <script>
-const texts = [
-  "Scripter",
-  "UI Designer",
-  "Luau Programmer",
-  "Linux User",
-  "Game developer",
-  "Script Analyst",
-  "Chad"
-];
+    const texts = ["Scripter","UI Designer","Luau Programmer","Linux User","Game developer","Script Analyst","Chad"];
+    let textIndex = 0, charIndex = 0;
+    const typeText = document.getElementById("type-text");
+    const cursor = document.getElementById("cursor");
 
-let textIndex = 0;
-let charIndex = 0;
+    function updateCursor() {
+      const containerWidth = typeText.parentElement.offsetWidth;
+      const textWidth = typeText.offsetWidth;
+      const offset = (containerWidth - textWidth) / 2 + textWidth;
+      cursor.style.transform = `translateX(${offset}px)`;
+    }
 
-const typeText = document.getElementById("type-text");
-const cursor = document.getElementById("cursor");
+    function type() {
+      const currentText = texts[textIndex];
+      if (charIndex < currentText.length) {
+        typeText.textContent += currentText.charAt(charIndex);
+        charIndex++;
+        updateCursor();
+        setTimeout(type, 75);
+      } else {
+        setTimeout(erase, 750);
+      }
+    }
 
-function updateCursor() {
-  const containerWidth = typeText.parentElement.offsetWidth;
-  const textWidth = typeText.offsetWidth;
-  // Centrar el cursor al final del texto
-  const offset = (containerWidth - textWidth) / 2 + textWidth;
-  cursor.style.transform = `translateX(${offset}px)`;
-}
-
-function type() {
-  const currentText = texts[textIndex];
-
-  if (charIndex < currentText.length) {
-    typeText.textContent += currentText.charAt(charIndex);
-    charIndex++;
-    updateCursor();
-    setTimeout(type, 75);
-  } else {
-    setTimeout(erase, 750);
-  }
-}
-
-function erase() {
-  if (charIndex > 0) {
-    typeText.textContent = typeText.textContent.slice(0, -1);
-    charIndex--;
-    updateCursor();
-    setTimeout(erase, 50);
-  } else {
-    textIndex = (textIndex + 1) % texts.length;
-    setTimeout(type, 500);
-  }
-}
-
-type();
+    function erase() {
+      if (charIndex > 0) {
+        typeText.textContent = typeText.textContent.slice(0, -1);
+        charIndex--;
+        updateCursor();
+        setTimeout(erase, 50);
+      } else {
+        textIndex = (textIndex + 1) % texts.length;
+        setTimeout(type, 500);
+      }
+    }
+    type();
 </script>
 
 <style>
   #cursor {
     animation: blink 2s step-end infinite;
-    transition: transform 0.05s linear; /* aquí entra el lerp */
+    transition: transform 0.05s linear;
   }
 
   @keyframes blink {
-    0%, 50%, 100% { opacity: 1; }
-    25%, 75% { opacity: 0; }
+    0%,50%,100%{
+      opacity:1
+    }
+
+    25%,75%{
+      opacity:0
+    }
+  }
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+  .snap-section {
+    height:100vh;
+    scroll-snap-align:start;
+    position:relative;
+    animation: 2s appear ease-out;
+  }
+  .snap-container {
+    height:100vh;
+    overflow-y:scroll;
+    scroll-snap-type: y proximity;
+    scroll-behavior: initial;
+    scrollbar-width:none;
+    position:relative;
+    z-index:10;
+   }
+  .snap-container::-webkit-scrollbar{
+    display:none;
+  }
+  .snap-container::before {
+    content:"";
+    position:fixed;
+    inset:0;
+    background:linear-gradient(to bottom right, rgba(0,0,0,.2));
+    backdrop-filter:blur(6px);
+    z-index:15;
+    pointer-events:none;
   }
 </style>
-
+</body>
 </html>
